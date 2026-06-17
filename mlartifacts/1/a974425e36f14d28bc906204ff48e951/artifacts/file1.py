@@ -56,10 +56,7 @@ with mlflow.start_run():
     mlflow.set_tags({"Author": 'Raunak', "Project": "Wine Classification"})
 
     # Log the model
-    mlflow.sklearn.log_model(
-    sk_model=rf,
-    name="random_forest_model"
-    )
+    mlflow.sklearn.log_model(rf, "Random_Forest_Model")
     
     
     print(accuracy)
